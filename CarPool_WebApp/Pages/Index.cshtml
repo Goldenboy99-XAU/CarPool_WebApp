@@ -1,0 +1,44 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<!-- Navigation Bar starts here -->
+<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+    <div class="container">
+        <a class="navbar-brand" asp-area="" asp-page="/Index">CarPool_WebApp</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+            <ul class="navbar-nav flex-grow-1">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-page="/About">About the App</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Welcome Text -->
+<div class="text-center">
+    <br />
+    <br />
+    <br />
+
+    <h1 class="display-4">Welcome</h1>
+    <p> Before we Begin our journey using my newly created Car Pooling App. We'd like you to click the Continue button below to get started with everything</p>
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- Button that will redirect the user the Authentication page -->
+    <a asp-page="/Login" class="btn btn-primary">Continue</a>
+</div>
+

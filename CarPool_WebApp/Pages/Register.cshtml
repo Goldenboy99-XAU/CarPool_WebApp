@@ -1,0 +1,90 @@
+﻿@page
+@model CarPool_WebApp.Pages.RegisterModel
+@{
+    ViewData["Title"] = "Register page";
+
+}
+
+<!-- Navigation Bar starts here -->
+<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+    <div class="container">
+        <a class="navbar-brand" asp-area="" asp-page="/Index">CarPool_WebApp</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+            <ul class="navbar-nav flex-grow-1">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-page="/About">About the App</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<br />
+
+
+<div class="text-center">
+<h1>Register</h1>
+<br />
+<br />
+<form method="post">
+    <div>
+        <label for="username">E-Mail:</label>
+        <br />
+        <input type="text" id="username" name="Username" value="@Model.Email" />
+    </div>
+    <br />
+    
+    
+    <div>
+        <label for="name">Name:</label>
+        <br />
+        <input type="text" id="name" name="Name" value="@Model.Name" />
+    </div>
+    <br />
+    
+
+
+    <div>
+        <label for="surname">Surname:</label>
+        <br />
+        <input type="text" id="Surname" name="Surname" value="@Model.Surname" />
+    </div>
+    <br />
+    
+
+
+    <div>
+        <label for="mobile">Mobile:</label>
+        <br />
+        <input type="text" id="mobile" name="Mobile" value="@Model.Mobile" />
+    </div>
+    <br />
+    
+    
+    <div>
+        <label for="password">Password:</label>
+        <br />
+        <input type="password" id="password" name="Password" />
+    </div>
+    <br />
+    
+
+
+    <div>
+        <label for="confirmPassword">Confirm Password:</label>
+        <br />
+        <input type="password" id="confirmPassword" name="ConfirmPassword" />
+    </div>
+    <br />
+
+
+
+        <button type="submit" class="btn btn-primary">Register</button>
+</form>
+</div>
